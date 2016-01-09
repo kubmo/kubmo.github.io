@@ -25,104 +25,104 @@
     <p>In Sublime Text, click on 'File' in the upper left hand corner and select the first option from the dropdown 'New File'. This will create a new file for you. To name the file, click 'File'. Make sure you change the file to be saved in your new folder. Call this file index.html. Click 'Save'. This will be your file where all of the HTML for your site will live. Let your instructor know if this is confusing.</p>
     <p>Let's, also, create an images folder, so we can collect images to put in there as we go. Within your newly created folder, create another folder the same way you did before and call it 'images'. Show your instructor your newly created files to make sure they are correct and continue to the next section!</p>
 
-    ###Setting up your HTML Page
+    <h2>Setting up your HTML Page</h2>
     <p>Let's start by building out the skeleton of our web page. This means there will be no style, but just the content.</p>
     <p>To begin, let's set up the HTML page. In your index.html file, copy and paste the following into the file: </p>
 
-   ```
-				    <!DOCTYPE html>
-				    <html lang="en">
-					    <head>
-					        <meta charset="UTF-8">
-					        <title>Add your page title here</title> 
-					        <link href='https://fonts.googleapis.com/css?family=Muli:400,300italic,300' rel='stylesheet' type='text/css'>
-					        <link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
-					        <link rel="stylesheet" href="index.css">
-					    </head>
-					    <body>
-					    </body>
-				    </html>
-  	```
+   <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+	    &lt;head&gt;
+	        &lt;meta charset="UTF-8"&gt;
+	        &lt;title&gt;Add your page title here&lt;/title&gt;
+	        &lt;link href='https://fonts.googleapis.com/css?family=Muli:400,300italic,300' rel='stylesheet' type='text/css'&gt;
+	        &lt;link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'&gt;
+	        &lt;link rel="stylesheet" href="index.css"&gt;
+	    &lt;/head&gt;
+	    &lt;body&gt;
+	    &lt;/body&gt;
+    &lt;/html&gt;
+  	</pre></code>
   	<p>Make sure you save the file after editing it. A short cut for this is 'command' + 's'.</p>
   	<p>Here you are declaring that this is an HTML page. Edit the page title tag to your desire. This will show up in the tab of the web browser. You are, also, adding the fonts that we will be using and tying the style sheet that we will be creating. Ask your instructor if you have any questions.</p>
   	<p>In order to see what you have just done. Open the Chrome browser. Click 'file' in the upper left hand corner. Click 'Open File' and select your index.html file from your newly created file folder. Ta da! Now, you should see a blank page. Keep this page open, because we will be using this a lot during the workshop to make sure we are doing things correctly.</p>
 
   	<h2>Navigation</h2>
   	<p>Now that we have our basic page set up, let's start by adding the HTML for our navigation that will live at the top of the page. This will allow viewers of your site to easily move from section to section. We will build the functionality for that later, but just want to add the basic structure. Copy and paste the following code into Sublime text. Make sure that you put it in between the '<body>' and closing '</body>' tag. </p>
-  	```
-  	<nav>
-        <a href="#resumen">Resumen</a>
-        <a href="#fotos">Fotos</a>
-        <a href="#contacto">Contacto</a>    
-    </nav>
-    ```
+  	<pre><code>
+  	&lt;nav&gt;
+        &lt;a href="#resumen">Resumen&lt;/a&gt;
+        &lt;a href="#fotos">Fotos&lt;/a&gt;
+        &lt;a href="#contacto">Contacto&lt;/a&gt;    
+    &lt;/nav&gt;
+    </pre></code>
     <p>Here you are creating a link using the keyword 'href' and surrounded by an 'a' tag. This is how we tell the HTML that we want a link. We will make these works link later. Take a moment to play around with this. Change words like 'Resumen' to something else. Save the page and refresh the Chrome browser and notice how it changes to whatever you typed. Ask your instructor if any questions come up.</p>
 
     <h2>Header Section</h2>
     <p>This will be the main focal point for your site. We will add an image and styles later, but for row, we will build the skeleton for it. Copy and paste the following code right underneath your closing nav tag. If this is confusing, your instructor can show you.</p>
-    ```
-    <header>
-        <div id="image-container"></div>
-        <h1>Put your name here</h1>
-        <h2>Write a sentence about yourself here.</h2>
-    </header>
-    ```
+    <pre><code>
+    &lt;header&gt;
+        &lt;div id="image-container">&lt;/div&gt;
+        &lt;h1&gt;Put your name here&lt;/h1&gt;
+        &lt;h2&gt;Write a sentence about yourself here.&lt;/h2&gt;
+    &lt;/header&gt;
+    </pre></code>
     <p>Be sure to change the text to show your name and your tagline!</p>
   	
   	<h2>Resume Section</h2>
   	<p>Now, let's add our first section, the resume section. Copy and paste the code below into your html file.</p>
-  	```
-  	<section id="resumen" class="resumen">
-        <h1>Mi Experiencia</h1>
-        <h3>Current Job</h3>
-        <p>Current job description.</p>
-        <div id="line-break"> </div>
-        <h3>Past Job</h3>
-        <p>Past job description.</p>
-        <div id="line-break"> </div>
-        <h3>Another past job description</h3>
-        <p>Another past job description.</p>
-        <div id="line-break"> </div>
-        <h3> Activities, awards, hobbies, etc. </h3>
-        <p>Description.</p>
-    </section>
-    ```
+  	<pre><code>
+  	&lt;section id="resumen" class="resumen"&gt;
+        &lt;h1&gt;Mi Experiencia&lt;/h1&gt;
+        &lt;h3&gt;Current Job&lt;/h3&gt;
+        &lt;p&gt;Current job description.&lt;/p&gt;
+        &lt;div id="line-break"&gt; &lt;/div&gt;
+        &lt;h3&gt;Past Job&lt;/h3&gt;
+        &lt;p&gt;Past job description.&lt;/p&gt;
+        &lt;div id="line-break"&gt; &lt;/div&gt;
+        &lt;h3&gt;Another past job description.&lt;/h3&gt;
+        &lt;p&gt;Another past job description.&lt;/p&gt;
+        &lt;div id="line-break"&gt; &lt;/div&gt;
+        &lt;h3&gt; Activities, awards, hobbies, etc. &lt;/h3&gt;
+        &lt;p&gt;Description.&lt;/p&gt;
+    &lt;/section>
+    </pre></code>
     <p>Notice how we named this section with an id that matches the href id in the navigation section. This is how the page will know how to scroll to this section, when clicking on that link. Feel free to add and change any info you want. To challenge yourself, try adding another secton under my experience that talks about your future goals. Rememeber to keep refreshing your browser to see the skeleton start to grow!</p>
 
     <h2>Photos Section</h2>
     <p>Now, onto the second section, the photos section. Copy and paste the code below into your html file. But before we write any more code, pick out eight photos that you have taken or that represent you that you would like to have on your site. Put each picture into the images folder that you previously created. Name each photo something that represents the image and paste in where it says 'your_image_name' below.</p>
-    ```
-      <section id="fotos" class="fotos">
-        <h1>Mis Fotos</h1>
-        <img src="images/your_image_name.jpg" alt="image_name">
-        <img src="images/your_image_name.jpg" alt="image_name">
-        <img src="images/your_image_name.jpg" alt="image_name">
-        <img src="images/your_image_name.jpg" alt="image_name">
-        <img src="images/your_image_name.jpg" alt="image_name">
-        <img src="images/your_image_name.jpg" alt="image_name">
-        <img src="images/your_image_name.jpg" alt="image_name">
-        <img src="images/your_image_name.jpg" alt="image_name">
-    </section>
-    ```
+    <pre><code>
+      &lt;section id="fotos" class="fotos"&gt;
+        &lt;h1&gt;Mis Fotos&lt;/h1&gt;
+        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+    &lt;/section&gt;
+    </pre></code>
     <p>Notice the 'img' tag, now. That let's the HTML know that you will be adding a picture here. The 'alt' name is what shows up if your picture happens not to load. Refresh your browser and notice all of your pictures show up!</p>
 
     <h2>Contact Section</h2>
     <p>We are at our final section! There are four images on the desktop of your computer. If you do not have them, we are passing around a thumb drive and your instructor can help you get them off of the thumb drive and onto your desktop. Take the four images and place them in your 'images' folder. Copy and paste the following code and refresh your browser:</p>
-    ```
-    <footer id="contacto">
-        <h1>Contacto</h1>
+    <pre><code>
+    &lt;footer id="contacto"&gt;
+        &lt;h1&gt;Contacto&lt;/h1&gt;
 
-        <a href="https://twitter.com/your_twitter_handle"><img src="images/twitter.png"></a>
-        <a href="https://facebook.com/your_facebook_name"><img src="images/facebook.png"></a>
-        <a href="https://linkedin.com/in/your_linkedin_name"><img src="images/linkedin.png"></a>
-        <a href="mailto:your_email_address"><img src="images/gmail.png"></a>
-    </footer>
-    ```
+        &lt;a href="https://twitter.com/your_twitter_handle"&gt;&lt;img src="images/twitter.png"&gt;&lt;/a&gt;
+        &lt;a href="https://facebook.com/your_facebook_name"&gt;&lt;img src="images/facebook.png"&gt;&lt;/a&gt;
+        &lt;a href="https://linkedin.com/in/your_linkedin_name"&gt;&lt;img src="images/linkedin.png"&gt;&lt;/a&gt;
+        &lt;a href="mailto:your_email_address"&gt;&lt;img src="images/gmail.png"&gt;&lt;/a&gt;
+    &lt;/footer&gt;
+    </pre></code>
     <p>Notice the 'href' tag again! This means that these images link to your actual profiles. Put in your newly created profile, so people can contact you! Refresh in your browser andd make sure that when you click on the images, that they link to your profiles correctly. If not, ask your instructor.</p>
 
     <h2>Sytling the Page</h2>
     <p>Congratulations! You have the basic outline for your website! But, doesn't it look pretty bad? Now, we are going to add all of the styles! First, we need to create another file, our CSS file. Create a new file in your folder, like you did before, and make sure you call the file 'index.css'. Open your newly created file and copy and paste the following code: </p>
-    ```
+    <pre><code>
     html {
     box-sizing: border-box;
 	}
@@ -174,9 +174,9 @@
 	    font-size: 18px;
 	    line-height: 1.5;
 	}
-```
+</pre></code>
 <p>Refresh the page and notice what happens! Notice that we are targeting things in our HTML. The h1, for example, is our header. Play around with changing things, like the font sizes. Refresh the browser and notice how things change! Ask your instructor if any questions arise. Before we move onto styling the header section, pick out a picture that will be your background image. Save the image with a good name in your images folder. Once you have done that, copy and paste the followingn code beneath, directly after the existing CSS.</p> 
-```
+<pre><code>
 header {
     margin-top: 70px;
     position: relative;
@@ -220,9 +220,9 @@ header h2 {
     right: 20px;
     padding-top: 4  0px;
 }
-```
+</pre></code>
 <p>Make sure to change the name of your image in the '#image-container' to be the name of the image that you just saved. Save your file and refresh the browser. Look at your header with the background image! Feel free to play around before copy and pasting the navigation CSS below.</p>
-```
+<pre><code>
 nav {
     position: fixed;
     top: 0;
@@ -252,12 +252,12 @@ nav a:hover {
     color: #ffffff;
     border-radius: 10px;
 }
-```
+</pre></code>
 <p> Notice how when you hover over the navigation links at the top, now, that it changes color! That is done with the 'nav a:hover', the very last thing that you pasted.</p>
 
 <h2>Finishing up the Styling</h2>
 <p>Copy and paste the remaining CSS below. Change any colors or make any tweaks. If something doesn't look right, show your instructor. Also, you should be able to click on each navigation link and have it bring you to the correct section on your site!</p>
-```
+<pre><code>
 .resumen {
     overflow: hidden;
 }
@@ -279,8 +279,6 @@ nav a:hover {
     margin-top: 30px;
 }
 
-/* Fotos
------------------------------------------*/
 .fotos {
     margin-top: -100px;
 }
@@ -291,9 +289,6 @@ nav a:hover {
     margin-left: 20px;
 }
 
-
-/* FOOTER - contact info
------------------------------------------*/
 footer {
     margin-top: -100px;
     border-bottom: thick solid #AA00FF;
@@ -304,7 +299,7 @@ footer img {
     width: 50px;
     margin: 30px;
 }
-```
+</pre></code>
 <p>Woo hoo! Your site should look how you want it to! You just built your first website. What a huge accomplishment!</p>
 
 <h2>Hosting Your Site</h2>

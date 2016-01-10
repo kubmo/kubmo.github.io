@@ -38,6 +38,7 @@
 	        &lt;link href='https://fonts.googleapis.com/css?family=Muli:400,300italic,300' rel='stylesheet' type='text/css'&gt;
 	        &lt;link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'&gt;
 	        &lt;link rel="stylesheet" href="index.css"&gt;
+	        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 	    &lt;/head&gt;
 	    &lt;body&gt;
 	    &lt;/body&gt;
@@ -50,11 +51,13 @@
   	<h2>Navigation</h2>
   	<p>Now that we have our basic page set up, let's start by adding the HTML for our navigation that will live at the top of the page. This will allow viewers of your site to easily move from section to section. We will build the functionality for that later, but just want to add the basic structure. Copy and paste the following code into Sublime text. Make sure that you put it in between the '<body>' and closing '</body>' tag. </p>
   	<pre><code>
-  	&lt;nav&gt;
-        &lt;a href="#resumen">Resumen&lt;/a&gt;
-        &lt;a href="#fotos">Fotos&lt;/a&gt;
-        &lt;a href="#contacto">Contacto&lt;/a&gt;    
-    &lt;/nav&gt;
+  	&lt;div id="container"&gt;
+	  	&lt;nav&gt;
+	        &lt;a href="#resumen">Resumen&lt;/a&gt;
+	        &lt;a href="#fotos">Fotos&lt;/a&gt;
+	        &lt;a href="#contacto">Contacto&lt;/a&gt;    
+	    &lt;/nav&gt;
+	&lt;/div&gt;
     </pre></code>
     <p>Here you are creating a link using the keyword 'href' and surrounded by an 'a' tag. This is how we tell the HTML that we want a link. We will make these works link later. Take a moment to play around with this. Change words like 'Resumen' to something else. Save the page and refresh the Chrome browser and notice how it changes to whatever you typed. Ask your instructor if any questions come up.</p>
 
@@ -64,6 +67,7 @@
     &lt;header&gt;
         &lt;div id="image-container"&gt;&lt;/div&gt;
         &lt;h1&gt;Put your name here&lt;/h1&gt;
+         &lt;div class="divider"&gt;&lt;/div&gt;
         &lt;h2&gt;Write a sentence about yourself here.&lt;/h2&gt;
     &lt;/header&gt;
     </pre></code>
@@ -76,12 +80,15 @@
         &lt;h1&gt;Mi Experiencia&lt;/h1&gt;
         &lt;h3&gt;Current Job&lt;/h3&gt;
         &lt;p&gt;Current job description.&lt;/p&gt;
+        &lt;p class="detail"&gt;Date Range you worked here&lt;/p&gt;
         &lt;div id="line-break"&gt; &lt;/div&gt;
         &lt;h3&gt;Past Job&lt;/h3&gt;
         &lt;p&gt;Past job description.&lt;/p&gt;
+        &lt;p class="detail"&gt;Date Range you worked here&lt;/p&gt;
         &lt;div id="line-break"&gt; &lt;/div&gt;
         &lt;h3&gt;Another past job description.&lt;/h3&gt;
         &lt;p&gt;Another past job description.&lt;/p&gt;
+        &lt;p class="detail"&gt;Date Range you worked here&lt;/p&gt;
         &lt;div id="line-break"&gt; &lt;/div&gt;
         &lt;h3&gt; Activities, awards, hobbies, etc. &lt;/h3&gt;
         &lt;p&gt;Description.&lt;/p&gt;
@@ -94,14 +101,16 @@
     <pre><code>
       &lt;section id="fotos" class="fotos"&gt;
         &lt;h1&gt;Mis Fotos&lt;/h1&gt;
-        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
-        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
-        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
-        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
-        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
-        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
-        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
-        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+        &lt;div class="foto_container"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	    &lt;/div&gt;    
     &lt;/section&gt;
     </pre></code>
     <p>Notice the 'img' tag, now. That let's the HTML know that you will be adding a picture here. The 'alt' name is what shows up if your picture happens not to load. Refresh your browser and notice all of your pictures show up!</p>
@@ -117,6 +126,10 @@
         &lt;a href="https://linkedin.com/in/your_linkedin_name"&gt;&lt;img src="images/linkedin.png"&gt;&lt;/a&gt;
         &lt;a href="mailto:your_email_address"&gt;&lt;img src="images/gmail.png"&gt;&lt;/a&gt;
     &lt;/footer&gt;
+    &lt;div id="kubmo_info"&gt;
+    	&lt;a href="http://kubmo.github.io/" target="_blank" &lt;p&gt;Like this site? Build your own with the Kubmo Guides!&lt;/p&gt; &lt;/a&gt;
+    &lt;/div&gt;
+
     </pre></code>
     <p>Notice the 'href' tag again! This means that these images link to your actual profiles. Put in your newly created profile, so people can contact you! Refresh in your browser andd make sure that when you click on the images, that they link to your profiles correctly. If not, ask your instructor.</p>
 
@@ -135,6 +148,7 @@
 	    font-weight: lighter;
 	    padding: 0;
 	    margin: 0;
+	    background-color: #F5F5F5;
 	}
 
 	h1 {
@@ -142,9 +156,9 @@
 	    margin: 0;
 	    font-weight: normal;
 	    text-align: center;
-	    border-bottom: 1.5px solid #808080;
-	    padding-bottom: 20px;
-	    color: #808080;
+	    padding-bottom: 60px;
+	    color: #400160;
+
 	}
 
 	h2 {
@@ -163,16 +177,19 @@
 	header,
 	section,
 	footer {
-	    padding: 100px 150px
+	    padding: 60px 120px
 	}
 
 	.loves,
 	footer {
 	    text-align: center;
 	}
+
 	p {
 	    font-size: 18px;
 	    line-height: 1.5;
+	    color: #848484;
+	    padding-bottom: 30px;
 	}
 </pre></code>
 <p>Refresh the page and notice what happens! Notice that we are targeting things in our HTML. The h1, for example, is our header. Play around with changing things, like the font sizes. Refresh the browser and notice how things change! Ask your instructor if any questions arise. Before we move onto styling the header section, pick out a picture that will be your background image. Save the image with a good name in your images folder. Once you have done that, copy and paste the followingn code beneath, directly after the existing CSS.</p> 
@@ -189,32 +206,47 @@ header {
 #image-container {
     position: absolute;
     top: -10px;
-    left: -10px;
+    left: 0px;
     bottom: -10px;
-    right: -10px;
-    background: url(../images/your_image_name_here.jpg) no-repeat fixed;
+    right: 0px;
+    background: url(images/your_image_name_here.jpg) no-repeat center center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
+    -webkit-filter: blur(6px) saturate(180%);
+    -moz-filter: blur(6px) saturate(180%);
+    -o-filter: blur(6px) saturate(180%);
+    -ms-filter: blur(6px) saturate(180%);
+    filter: blur(6px) saturate(180%);
 }
 
 header h1 {
     position: absolute;
-    top: 150px;
-    font-size: 115px;
+    top: 140px;
+    font-size: 118px;
     color: #ffffff;
     left: 20px;
     right: 20px;    
 }
 
+.divider {
+	width: 100px;
+	height: 4px;
+	top: 220px;
+	background: #FFFFFF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	left: 46%;
+}
+
 header h2 {
     position: absolute;
-    top: 250px;
-    font-size: 32px;
+    top: 290px;
+    font-size: 30px;
     color: #ffffff;
     left: 20px;
     right: 20px;
@@ -233,24 +265,28 @@ nav {
     z-index: 1;
     background-color: white;
     border-top: thick solid #AA00FF;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 0px 1px 0px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 0px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
     display: inline-block; /* changes links from default inline element to add padding properly */
     text-decoration: none; /* removes underline */
-    margin: 20px; /* adds space around each link */
+    margin: -5px 20px 20px 20px; /* adds space around each link */
     color: #808080;
     font-size: 20px;
     font-style: normal;
     font-weight: lighter;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 25px;
 }
 
 nav a:hover {
-    background: #808080;
-    color: #ffffff;
-    border-radius: 10px;
+    background-color:#AA00FF;
+    color: #FFFFFF;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
 </pre></code>
 <p> Notice how when you hover over the navigation links at the top, now, that it changes color! That is done with the 'nav a:hover', the very last thing that you pasted.</p>
@@ -262,44 +298,200 @@ nav a:hover {
     overflow: hidden;
 }
 
+.resumen h1 {
+	font-weight: 600;
+	border-bottom: 1.5px solid #ccc;
+}
+
 .resumen h3 {
-    padding-top: 10px;
-    color: #808080;
+    padding-top: 30px;
+    color: #400160;
+    font-weight: 600;
 }
 
 .resumen p {
-    color: #808080;
+    color: #848484;
+    font-weight: 100;
+}
+
+.detail {
+	margin-top: -30px;
+	font-style: italic;
+	opacity: .5;
 }
 
 #line-break {
     width: 100px;
-    height: 1px;
-    background: #808080;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    height: 1px;	
+    background: #ccc;
 }
 
 .fotos {
     margin-top: -100px;
 }
+
+.fotos h1 {
+	border-top: 1.5px solid #ccc;
+	padding-top: 60px;	
+}
+
 .fotos img {
-    height: 250px;
-    width: 250px;
-    margin-top: 20px;
-    margin-left: 20px;
+    width: 286px;
 }
 
 footer {
     margin-top: -100px;
-    border-bottom: thick solid #AA00FF;
+}
+
+footer h1 {
+	margin-top: 30px;
+	border-bottom: 1.5px solid #ccc;
 }
 
 footer img {
-    height: 45px;
     width: 50px;
-    margin: 30px;
+    margin: 60px 30px 0px 30px;
+}
+
+/* BOTTOM BAR - kubmo info
+-----------------------------------------*/
+
+#kubmo_info a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#kubmo_info p {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#kubmo_info {
+    background-color: #AA00FF;
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    height: 82px;
+}
+
+#kubmo_info a:hover {
+    color: #400160;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
 </pre></code>
+
+<h2>Making your Site Responsive</h2>
+<p>Now, it's time to make your website responsive. That means it should look good when on a mobile phone or another smaller device that is not a computer. This is done using media queries. Copy and paste the code below in your CSS file, so that when someone looks at it on a mobile phone, it looks great!</p>
+<pre><code>
+/* MOBILE - responsive design
+-----------------------------------------*/
+
+@media only screen and (max-width: 1400px) {
+
+    .fotos img {
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .fotos img {
+        width: 320px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #container {
+        display: inline-block;
+    }
+
+    header,
+    section,
+    footer {
+        padding: 60px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    header h2 {
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 100px;
+        margin-top: 0px;
+    }
+
+    .divider {
+        top:200px;
+        left: 43%;
+    }
+
+    nav a {
+        margin: -5px 5px 5px 5px ; /* adds space around each link */
+        font-size: 18px;
+        padding: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header h1 {
+        font-size: 100px;
+        margin-top: -60px;
+    }
+
+    header h2 {
+        margin-top: 80px;
+    }
+
+    .divider {
+        top:280px;
+        left: 43%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header,
+    section,
+    footer {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    header h2 {
+        margin-top: 80px;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin-top: -30px;
+    }
+
+    header {
+        margin-top: 40px;
+    }
+
+    .divider {
+        top:260px;
+        left: 36%;
+    }
+}
+</pre></code>
+
 <p>Woo hoo! Your site should look how you want it to! You just built your first website. What a huge accomplishment!</p>
 
 <h2>Hosting Your Site</h2>

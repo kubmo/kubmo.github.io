@@ -11,23 +11,24 @@
 </head>
 <body>
 <section class="page-header">
-    <h1 class="project-name">Intro to HTML and CSS Guide</h1>
+    <h1 class="project-name">Build Your Own Personal Site</h1>
     <h2 class="project-tagline"></h2>
 </section>
 <section class="main-content">
+    <h2>Overview</h2>
+    <p>During this workshop, you'll build your own personal website using HTML and CSS. HTML is like the outline, elements, and structure. CSS is the style, organization, and colors. We will walk you through each step along the way, ask if you have questions at any point. See the example site that you will be creating: http://durhamka.github.io./</p>
     <h2>Getting Started</h2>
     <p>After you have divided into your groups, open Sublime Text and the Chrome browser.</p>
-    <p>Remember that Sublime Text is where you will be writing your personal site and the Chrome browser is where you will view it.</p>
-    <p>Ask your TA if you have any questions up to this point.</p>
-
+    <p>Sublime Text is the tool your are using to write code for your personal site and the Chrome browser is where you will view it as you make changes.</p>
+    <p>When writing code, remember that you have to be very precise. Spelling mistakes or extra spaces can mess up your work, so pay attention to little details! Copy and Paste whenever you can.</p>
     <h2>Creating Your Files</h2>
-    <p>Let's create a directory that will hold both your HTML and CSS file. In an application called 'Finder' (let your instructor know if you can't find it), click on 'Desktop' on the left. In the upper left hand corner, click 'File', then 'New Folder'. Create a new folder and name it whatever you desire! Press Enter to save the new folder. 
-    <p>In Sublime Text, click on 'File' in the upper left hand corner and select the first option from the dropdown 'New File'. This will create a new file for you. To name the file, click 'File', then click 'Save'. Make sure you change the file to be saved in your new folder. Call this file index.html. Click 'Save'. This will be your file where all of the HTML for your site will live. Let your instructor know if this is confusing.</p>
-    <p>Let's, also, create an images folder, so we can collect images to put in there as we go. Within your newly created folder, create another folder the same way you did before and call it 'images'. Show your instructor your newly created files to make sure they are correct and continue to the next section!</p>
+    <p>Let's create a directory that will hold both your HTML and CSS file. In an application called 'Finder' (let your instructor know if you can't find it), click on 'Desktop' on the left. In the upper left hand corner, click 'File', then 'New Folder'. Create a new folder and name it 'personal_site'. Press Enter to save the new folder. 
+    <p>In Sublime Text, click on 'File' in the upper left hand corner and select 'New File'. To name the file, click 'File', then click 'Save'. Save this file to your 'personal_site' folder. Call this file 'index.html'. Click 'Save'. This will be your file where all of the HTML for your site will live.</p>
+    <p>Using your finder, create an images folder inside of your 'personal_site' folder. This is where all the images for your website will be stored. Show your instructor the folder structure to make sure it is correct. Then move on to the next section!</p>
 
     <h2>Setting up your HTML Page</h2>
-    <p>Let's start by building out the skeleton of our web page. This means there will be no style, but just the content.</p>
-    <p>To begin, let's set up the HTML page. In your index.html file, copy and paste the following into the file: </p>
+    <p>Let's start by building out the skeleton of our web page. This means there will be no style, but just the structure and elements.</p>
+    <p>In your index.html file, copy and paste the following into the file: </p>
 
    <pre><code>
     &lt;!DOCTYPE html&gt;
@@ -45,8 +46,8 @@
     &lt;/html&gt;
   	</pre></code>
   	<p>Make sure you save the file after editing it. A short cut for this is 'command' + 's'.</p>
-  	<p>Here, you are declaring that this is an HTML page. Edit the page title tag to your desire. Remember, don't delete the tags This will show up in the tab of the web browser. You are, also, adding the fonts that we will be using and tying the style sheet that we will be creating. Ask your instructor if you have any questions.</p>
-  	<p>In order to see what you have just done. Open the Chrome browser. Click 'file' in the upper left hand corner. Click 'Open File' and select your index.html file from your newly created file folder. Ta da! Now, you should see a blank page. Keep this page open, because we will be using this a lot during the workshop to make sure we are doing things correctly.</p>
+  	<p>Here, you are declaring that this is an HTML page. Edit the page title tag to match what you want to call your website. Remember, don't delete any of this code, it's what makes your website show up correctly in the browser, connecting the style guide, and linking to fonts.</p>
+  	<p>In order to see what you have just done. Open the Chrome browser. Click 'file' in the upper left hand corner. Click 'Open File' and select your index.html file from your 'personal_site' folder. Ta da! Now, you should see a blank page. Keep this page open, because we will be using this throughout the workshop to view your website as you make changes.</p>
 
   	<h2>Navigation</h2>
   	<p>Now that we have our basic page set up, let's start by adding the HTML for our navigation that will live at the top of the page. This will allow viewers of your site to easily move from section to section. We will build the functionality for that later, but just want to add the basic structure. Copy and paste the following code into Sublime text. Make sure that you put it in between the '&lt;body&gt;' and closing '&lt;/body&gt;' tag. </p>
@@ -59,10 +60,10 @@
 	    &lt;/nav&gt;
 	&lt;/div&gt;
     </pre></code>
-    <p>Here you are creating a link using the keyword 'href' and surrounded by an 'a' tag. This is how we tell the HTML that we want a link. We will make these works link later. Take a moment to play around with this. Change words like 'Resumen' to something else. Save the page and refresh the Chrome browser and notice how it changes to whatever you typed. Ask your instructor if any questions come up.</p>
+    <p>Here you are creating a link using the keyword 'href' and surrounded by an 'a' tag. This is how we tell the HTML that we want a link. We will make these links function later. Take a moment to play around with this. Change words like 'Resumen' to something else. Save the page and refresh the Chrome browser and notice how it changes to whatever you typed. Ask your instructor if any questions come up.</p>
 
     <h2>Header Section</h2>
-    <p>This will be the main focal point for your site. We will add an image and styles later, but for now, we will build the skeleton for it. Copy and paste the following code right underneath your closing nav tag. If this is confusing, your instructor can show you.</p>
+    <p>This will be the main focal point for your site. We will add an image and styles later, but for now, we are just building the outline. Copy and paste the following code right underneath your closing nav tag. If this is confusing, your instructor can show you.</p>
     <pre><code>
     &lt;header&gt;
         &lt;div id="image-container"&gt;&lt;/div&gt;
@@ -97,7 +98,7 @@
     <p>Notice how we named this section with an id that matches the href id in the navigation section. This is how the page will know how to scroll to this section, when clicking on that link. Feel free to add and change any info you want. To challenge yourself, try adding another secton under my experience that talks about your future goals. Rememeber to keep refreshing your browser to see the skeleton start to grow!</p>
 
     <h2>Photos Section</h2>
-    <p>Now, onto the second section, the photos section. Copy and paste the code below into your html file. But before we write any more code, pick out eight photos that you have taken or that represent you that you would like to have on your site. Put each picture into the images folder that you previously created. Name each photo something that represents the image and paste in where it says 'your_image_name' below.</p>
+    <p>Now, onto the second section, the photos section. Copy and paste the code below into your html file. But before we write any more code, pick out eight photos that you have taken or that represent you that you would like to have on your site. Put each picture into the images folder that you previously created. If you don't have images easily available, you can just keep the ones we already have. Name each photo something that represents the image and paste in where it says 'your_image_name' below.</p>
     <pre><code>
       &lt;section id="fotos" class="fotos"&gt;
         &lt;h1&gt;Mis Fotos&lt;/h1&gt;
@@ -113,7 +114,7 @@
 	    &lt;/div&gt;    
     &lt;/section&gt;
     </pre></code>
-    <p>Notice the 'img' tag, now. That let's the HTML know that you will be adding a picture here. The 'alt' name is what shows up if your picture happens not to load. Refresh your browser and notice all of your pictures show up!</p>
+    <p>Notice the 'img' tag. That tells the browser that you will be adding a picture here. The 'alt' name is what shows up if your picture happens not to load. Refresh your browser and notice all of your pictures show up!</p>
 
     <h2>Contact Section</h2>
     <p>We are at our final section! There are four images on the desktop of your computer. If you do not have them, we are passing around a thumb drive and your instructor can help you get them off of the thumb drive and onto your desktop. Take the four images and place them in your 'images' folder. Copy and paste the following code and refresh your browser:</p>
@@ -131,10 +132,10 @@
     &lt;/div&gt;
 
     </pre></code>
-    <p>Notice the 'href' tag again! This means that these images link to your actual profiles. Put in your newly created profile, so people can contact you! Refresh in your browser and make sure that when you click on the images, that they link to your profiles correctly. If not, ask your instructor.</p>
+    <p>Notice the 'href' tag again! This means that these images link to your actual social profiles online. Put in the actual links to your social media sites, so people can contact you! Refresh your browser window and make sure that when you click on the images, they link to your social profiles correctly in a new page. If not, ask your instructor.</p>
 
     <h2>Sytling the Page</h2>
-    <p>Congratulations! You have the basic outline for your website! But, doesn't it look pretty bad? Now, we are going to add all of the styles! First, we need to create another file, our CSS file. Create a new file in your folder, like you did before, and make sure you call the file 'index.css'. Open your newly created file and copy and paste the following code: </p>
+    <p>Congratulations! You have the basic outline for your website! But, doesn't it look a little disorganized in the browser? Now, we are going to add all of the styles to make it pretty! First, we need to create another file, our CSS file. Like you did at the beginning, create a new file in your 'personal_site' folder, and call the file 'index.css'. Open your that file and copy and paste the following code: </p>
     <pre><code>
     html {
     box-sizing: border-box;
@@ -192,7 +193,7 @@
 	    padding-bottom: 30px;
 	}
 </pre></code>
-<p>Refresh the page and notice what happens! Notice that we are targeting things in our HTML. The h1, for example, is our header. Play around with changing things, like the font sizes. Refresh the browser and notice how things change! Ask your instructor if any questions arise. Before we move onto styling the header section, pick out a picture that will be your background image. Save the image with a good name in your images folder. Once you have done that, copy and paste the following code beneath, directly after the existing CSS.</p> 
+<p>Refresh the page and notice what happens! Notice that we are targeting things in our HTML. The h1, for example, is our header. Play around with changing things, like the font sizes. Refresh the browser and notice how things change! Ask your instructor if any questions arise. Before we move onto styling the header section, pick out a picture that will be your background image. Save the image as 'hero.jpeg' in your images folder. Once you have done that, copy and paste the following code beneath, directly after the existing CSS.</p> 
 <pre><code>
 header {
     margin-top: 70px;
@@ -253,7 +254,7 @@ header h2 {
     padding-top: 4  0px;
 }
 </pre></code>
-<p>Make sure to change the name of your image in the '#image-container' to be the name of the image that you just saved. Save your file and refresh the browser. Look at your header with the background image! Feel free to play around before copy and pasting the navigation CSS below.</p>
+<p>Make sure to change the name of your image in the '#image-container' to be the name of the image that you just saved (make sure you spell the file name correctly!). Save your file and refresh the browser. Look at your header with the background image! Next, copy the following code on the next line.</p>
 <pre><code>
 nav {
     position: fixed;
@@ -289,10 +290,10 @@ nav a:hover {
     border-radius: 4px;
 }
 </pre></code>
-<p> Notice how when you hover over the navigation links at the top, now, that it changes color! That is done with the 'nav a:hover', the very last thing that you pasted.</p>
+<p> Notice how when you hover over the navigation links at the top. Now it should be changing color! That is done with the 'nav a:hover', the very last thing that you pasted.</p>
 
 <h2>Finishing up the Styling</h2>
-<p>Copy and paste the remaining CSS below. Change any colors or make any tweaks. If something doesn't look right, show your instructor. Also, you should be able to click on each navigation link and have it bring you to the correct section on your site!</p>
+<p>Copy and paste the remaining CSS below. Feel free to mess around in the code, and make changes to personalize your site. If something doesn't look right or you want help personalizing, just ask your instructor. Also, you should be able to click on each navigation link and have it bring you to the correct section on your site!</p>
 <pre><code>
 .resumen {
     overflow: hidden;
@@ -495,16 +496,16 @@ footer img {
 <p>Woo hoo! Your site should look how you want it to! You just built your first website. What a huge accomplishment!</p>
 
 <h2>Hosting Your Site</h2>
-<p>We are going to host your site on something called Github. If we have good enough Internet, we are going to do it together, now. If not, we will do it for you when we have a better connection and send you an email with your site URL. Then, you will be able to view it from any computer and not just have it live locally on your machine.</p>
+<p>We are going to host your site on something called Github. If we have good enough Internet, we will do it together. If not, we will do it for you when we have a better connection and send you an email with your site URL. Then you will be able to view it from any browser window, and you can share it with anyone.</p>
 
 <h2>Creating a Github Account</h2>
-<p>In order to host your site on Github, you need to create an account. It is free of charge! In your browser, go to 'www.github.com'. In the top right hand corner, click 'Sign Up'. Type in a username, email address and password and click 'Create an account'. If you need help translating, ask your instructor.</p>
+<p>In order to host your site on Github, you need to create an account. It is free of charge. In your browser, go to 'www.github.com'. In the top right hand corner, click 'Sign Up'. Type in a username, email address and password and click 'Create an account'. If you need help translating, ask your instructor.</p>
 
 <h2>Creating a Github Page</h2>
-<p>Once you have your Github profile created, sign in to the main page. In the upper right hand corner there is a '+' sign. Click that and select the first option 'New repository'. In the 'Repository name' box type 'your_username'.github.io'. Make sure that you type in your username that you just created your account with. And then click the green button, 'Create repository'.</p>
+<p>Once you have your Github profile created, sign in to the main page. In the upper right hand corner there is a '+' sign. Click that and select the first option 'New repository'. In the 'Repository name' box type "'your_username'.github.io". Make sure that you type in your username that you just created your account with. And then click the green button, 'Create repository'.</p>
 
 <h2>Using a Github GUI</h2>
-<p>Open up the Github application on your machine. If your machine doesn't have it, we have a USB that has it on it. You can download it onto your machine. In the Github application, click the green "Set up in Desktop" button. When the GitHub desktop app opens, save the project. Then, enter the repository, commit your changes, and press the sync button. Please, let your instructor know if you have any questions.</p>
+<p>Open up the Github application on your computer. If your machine doesn't have it, we have a USB that has it on it so you can still download it. In the Github application, click the green "Set up in Desktop" button. When the GitHub desktop app opens, save the project. Then, enter the repository, commit your changes, and press the sync button. Please, let your instructor know if you have any questions.</p>
 
 <h2>The Finished Product</h2>
 <p>In your browser, go to http://your_username.github.io. You should see your finished site! You can visit this URL any time from any computer, as long as you have internet connection. Share with your family and friends and post about it on your social media sites! If the site does not show up, let your instructor know and they can help you debug.</p>

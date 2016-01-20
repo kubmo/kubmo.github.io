@@ -19,20 +19,24 @@
 </section>
 <section class="main-content">
     <h2>Overview</h2>
-    <p>During this workshop, you'll build your own personal website using HTML and CSS. HTML is like the outline, elements, and structure. CSS is the style, organization, and colors. We will walk you through each step along the way, ask if you have questions at any point. See the example site that you will be creating: http://durhamka.github.io./</p>
+    <p>During this workshop, you'll build your own personal website using HTML and CSS. HTML is like the outline, elements, and structure. CSS is the style, organization, and colors. We will walk you through each step along the way, ask if you have questions at any point. See the example site that you will be creating: <a href="http://durhamka.github.io./"> durhamka.github.io</a></p>
     <h2>Getting Started</h2>
-    <p>After you have divided into your groups, open your text editor. You will have different text editors depending on what computer you are using. Your instructor will hope you find your editor and open it. A text editor is where you will be typing all of the code that you will be writing today! So when you are prompted to copy and paste during this workshop, you will be putting all of that code in your text editor.</p>
-    <p>Next, let's open the browser you will be using today. Depending on what computer you are using will determine what application you will be using. It will either be Chrome, Firefox, Safari or Internet Explorer. These are the main, popular browsers. A browser is where you will view your work as you make changes in your text editor.</p>
     <p>When writing code, remember that you have to be very precise. Spelling mistakes or extra spaces can mess up your work, so pay attention to little details! Copy and Paste whenever you can.</p>
+        <ol>
+            <li><p>Divide into groups, and open your text editor. You will have different text editors depending on what computer you are using. Your instructor will help you find your editor and open it. A text editor is where you will be typing all of the code that you will be writing today! So when you are prompted to copy and paste during this workshop, you will be putting all of that code in your text editor.</p></li>
+            <li><p>Next, let's open the browser you will be using today. Depending on what computer you are using will determine what application you will be using. It will either be Chrome, Firefox, Safari or Internet Explorer. A browser is where you will view your work as you make changes in your text editor.</p></li>
+        </ol>
     <h2>Creating Your Files</h2>
-    <p>Let's create a directory that will hold both your HTML and CSS file. If you are using a Mac, a computer with an apple on the front of it.) In an application called 'Finder' (let your instructor know if you can't find it, follow these instructions: Click on 'Desktop' on the left. In the upper left hand corner, click 'File', then 'New Folder'. Create a new folder and name it 'personal_site'. Press Enter to save the new folder. 
-    <p>If you are using a PC, create a new folder and name it 'personal_site'. Ask an instructor if you have any trouble doing this.</p>
-    <p>In your text editor, click on 'File' in the upper left hand corner and select 'New File'. To name the file, click 'File', then click 'Save'. Save this file to your 'personal_site' folder. Call this file 'index.html'. Click 'Save'. This will be your file where all of the HTML for your site will live. Your text editor, depending on which one you are using, might working differently than this. If so, ask an instructor for help./</p>
-    <p>Now, create an images folder inside of your 'personal_site' folder. This is where all the images for your website will be stored. Show your instructor the folder structure to make sure it is correct. Then move on to the next section!</p>
-
+    <p>Let's create a directory that will hold both your HTML and CSS file.</p> 
+    <ol>
+        <li><p>If you are using a Mac, open an application called 'Finder'. Follow these instructions: Click on 'Desktop' on the left list. In the upper left hand corner, click 'File', then 'New Folder'. Create a new folder and name it 'personal_site'. Press Enter to save the new folder. </p></li>
+        <li><p>If you are using a PC, create a new folder and name it 'personal_site'. Ask an instructor if you have any trouble doing this.</p></li>
+        <li><p>In your text editor, click on 'File' in the upper left hand corner and select 'New File'. To name the file, click 'File', then click 'Save'. Save this file to your 'personal_site' folder. Call this file 'index.html'. Click 'Save'. This will be your file where all of the HTML for your site will live. Your text editor, depending on which one you are using, might working differently than this. If so, ask an instructor for help.</p></li>
+        <li><p>Now, create an images folder inside of your 'personal_site' folder. This is where all the images for your website will be stored. Show your instructor the folder structure to make sure it is correct. Then move on to the next section!</p></li>
+    </ol>
     <h2>Setting up your HTML Page</h2>
-    <p>Let's start by building out the skeleton of our web page. This means there will be no style, but just the structure and elements. We are writing HTML, here. HTML stands for Hyper Text Markup Language. Notice the structure of what you are pasting. We are declaring at the top of the page, what type of document we are creating, an HTML document. Also, notice that we are creating both head and body elements. We are telling the browser that we have a header and a body. We will continue to learn more about elements throughout. Elements are HTML's way of telling the browser what we want, whether it's smaller text, larger text or a specific part of the page.</p>
-    <p>In your index.html file, copy and paste the following into the file: </p>
+    <p>Let's start by building out the skeleton of our web page with HTML. This means there will be no style, but just the structure and elements. HTML stands for Hyper Text Markup Language. Notice the structure of what you are pasting. At the top of the page, we are telling the computer what type of document we are creating; an HTML document. Notice that we are creating both 'head' and 'body' elements to tell the browser that we have a header and a body. We will continue to learn more about elements during the exercise. Elements tell the browser what we want, whether it's smaller text, larger text or a specific part of the page.</p>
+    <p>In your index.html file that you already created in your text editor, copy and paste the following: </p>
 
    <pre><code>
     &lt;!DOCTYPE html&gt;
@@ -43,18 +47,23 @@
 	        &lt;link href='https://fonts.googleapis.com/css?family=Muli:400,300italic,300' rel='stylesheet' type='text/css'&gt;
 	        &lt;link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'&gt;
 	        &lt;link rel="stylesheet" href="index.css"&gt;
+            &lt;link rel="shortcut icon" href="images/logo@2x.png"&gt;
 	        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 	    &lt;/head&gt;
 	    &lt;body&gt;
+        FILL IN CONTENT HERE
 	    &lt;/body&gt;
     &lt;/html&gt;
   	</pre></code>
-  	<p>Make sure you put your name where it should be in the code above, 'Add your page title here'. Also, make sure you save the file after editing it. It does not save automatically.</p>
-  	<p>Here, you are declaring that this is an HTML page. Edit the page title tag to match what you want to call your website. Remember, don't delete any of this code, it's what makes your website show up correctly in the browser, connecting the style guide, and linking to fonts.</p>
-  	<p>In order to see what you have just done. Open the browser. Click 'file' in the upper left hand corner. Click 'Open File' and select your index.html file from your 'personal_site' folder. Ta da! Now, you should see a blank page. If you don't see a blank page, don't worry. It could just be because you are using a different text editor. Ask your instructor if you are confused. Keep this page open, because we will be using this throughout the workshop to view your website as you make changes.</p>
-
+    <p>Remember, don't delete any of this code, it's what makes your website show up correctly in the browser, connecting the style guide, and linking to fonts.</p>
+    <ol>
+      	<li><p>Type in your own name where it says 'Add your page title here'. Also, make sure you save the file after editing it by pressing 'command + s'. It does not save automatically.</p></li>
+      	<li><p>Edit the page 'title' tag to match what you want to call your website.</p></li>
+      	<li><p>Now we are going to see what you just did. Open the browser (Chrome, Safari, or Firefox). Click 'file' in the upper left hand corner. Click 'Open File' and select your index.html file from your 'personal_site' folder on the desktop. You should see a blank page. If you don't see a blank page, it could just be because you are using a different text editor. Keep this page open, we will be using this throughout the workshop to view your website as you make changes.</p></li>
+    </ol>
   	<h2>Navigation</h2>
-  	<p>Now that we have our basic page set up, let's start by adding the HTML for our navigation that will live at the top of the page. This will allow viewers of your site to easily move from section to section. We will build the functionality for that later, but just want to add the basic structure. Copy and paste the following code into Sublime text. Make sure that you put it in between the '&lt;div id="container"&gt;' and closing '&lt;div&gt;' tag. Make sure you continue to do this every single time you add new code to the file. Always leave the closing container div, body tag and html tag at the bottom and everything above that.</p>
+  	<p>Now we're going to start adding HTML for our navigation - this will go at the top of the website. Navigation allows viewers of your site to easily move from section to section. We will build the functionality for that later, but just want to add the basic structure. </p>
+    <p>Copy and paste the following code into Sublime text. You will paste this code in between the '&lt;div id="body"&gt;' and closing '&lt;div&gt;' tag. You should be replacing the text that says "FILL IN CONTENT HERE" Always leave the opening and closing tags at the top and bottom of your code. (container div, body tag and html tag).</p>
   	<pre><code>
   	&lt;div id="container"&gt;
 	  	&lt;nav&gt;
@@ -64,7 +73,7 @@
 	    &lt;/nav&gt;
 	&lt;/div&gt;
     </pre></code>
-    <p>Here you are creating a link using the keyword 'href' and surrounded by an 'a' tag. This is how we tell the HTML that we want a link. We will make these links function later. Take a moment to play around with this. Change words like 'Resumen' to something else. Save the page and refresh the Chrome browser and notice how it changes to whatever you typed. Ask your instructor if any questions come up.</p>
+    <p>The keyword 'href' and 'a' tag creates a link that someone can click on. We will make these links function later. Take a moment to play around with this. Change words like 'Resumen' to something else. Save the file in your text editor, and refresh the Chrome browser. Notice how it changes to whatever you typed. Ask your instructor if any questions come up.</p>
     <p>Your HTML code, so far, should look like this:</p>
     <pre><code>
     &lt;!DOCTYPE html&gt;
@@ -123,7 +132,7 @@
         &lt;p&gt;Description.&lt;/p&gt;
     &lt;/section&gt;
     </pre></code>
-    <p>Notice how we named this section with an id that matches the href id in the navigation section. This is how the page will know how to scroll to this section, when clicking on that link. Feel free to add and change any info you want. To challenge yourself, try adding another secton under my experience that talks about your future goals. Rememeber to keep refreshing your browser to see the skeleton start to grow!</p>
+    <p>Notice how this section has an "id". The "id" will allow us to link to this part of the page from the navigation section, when you click on the link. Feel free to add and change any info you want. To challenge yourself, try adding another secton under my experience that talks about your future goals. Rememeber to keep refreshing your browser to see the your outline grow!</p>
     <p>Your code up until this point, should look like this:</p>
     <pre><code>
     &lt;!DOCTYPE html&gt;
@@ -175,7 +184,10 @@
     </pre></code>
 
     <h2>Photos Section</h2>
-    <p>Now, onto the second section, the photos section. Copy and paste the code below into your html file. But before we write any more code, pick out eight photos that you have taken or that represent you that you would like to have on your site. Put each picture into the images folder that you previously created. If you don't have images easily available, you can just keep the ones we already have. Name each photo something that represents the image and paste in where it says 'your_image_name' below.</p>
+    <p>Now we'll move on to your photos.  But before we write any more code, pick out eight photos that you have taken or that represent you that you would like to have on your site. </p>
+    <p>Save each of your images in the 'images' folder that you previously created. If you don't have images easily available, you can just keep the ones we already have. Rename each photo something that represents your image. Make sure that your file names do not have any spaces. For example, you could name a file 'my_dog_is_cool.jpg'.</p>
+    <p>Copy and paste the code below into your html file under the closing tag of your resumen section - &lt;/section&gt;.</p>
+    <p>Paste the name of each of your images into your html file where it says 'your_image_name' below.</p>
     <pre><code>
       &lt;section id="fotos" class="fotos"&gt;
         &lt;h1&gt;Mis Fotos&lt;/h1&gt;
@@ -194,7 +206,8 @@
     <p>Notice the 'img' tag. That tells the browser that you will be adding a picture here. The 'alt' name is what shows up if your picture happens not to load. Refresh your browser and notice all of your pictures show up!</p>
 
     <h2>Contact Section</h2>
-    <p>We are at our final section! There are four images on the desktop of your computer. If you do not have them, we are passing around a thumb drive and your instructor can help you get them off of the thumb drive and onto your desktop. Take the four images and place them in your 'images' folder. Copy and paste the following code and refresh your browser:</p>
+    <p>We are at our final section! There are four images on the desktop of your computer that will be used for contact images. If you do not have them, we are passing around a thumb drive and your instructor can help you get them off of the thumb drive and onto your desktop. Take the four images and place them in your 'images' folder. </p>
+    <p>Copy and paste the following code underneath the images &lt;/section&gt;.</p>
     <pre><code>
     &lt;footer id="contacto"&gt;
         &lt;h1&gt;Contacto&lt;/h1&gt;
@@ -208,7 +221,7 @@
     	&lt;a href="http://kubmo.github.io/" target="_blank" &lt;p&gt;Like this site? Build your own with the Kubmo Guides!&lt;/p&gt; &lt;/a&gt;
     &lt;/div&gt;
     </pre></code>
-    <p>Notice the 'href' tag again! This means that these images link to your actual social profiles online. Put in the actual links to your social media sites, so people can contact you! Refresh your browser window and make sure that when you click on the images, they link to your social profiles correctly in a new page. If not, ask your instructor.</p>
+    <p>Notice the 'href' tag again. This means that these images link to your actual social profiles online. Put in the actual links to your social media sites, so people can contact you! Refresh your browser window and make sure that when you click on the images, they link to your social profiles correctly in a new page. If not, ask your instructor.</p>
     <p>Your HTML code should look like this, at this point!</p>
     <pre><code>
     &lt;!DOCTYPE html&gt;
@@ -283,7 +296,8 @@
     </pre></code>
 
     <h2>Styling the Page</h2>
-    <p>Congratulations! You have the basic outline for your website! But, doesn't it look a little disorganized in the browser? Now, we are going to add all of the styles to make it pretty! First, we need to create another file, our CSS file. Like you did at the beginning, create a new file in your 'personal_site' folder, and call the file 'index.css'. Open your that file and copy and paste the following code: </p>
+    <p>Congratulations! You have the basic outline for your website! But, doesn't it look a little disorganized in the browser? Now, we are going to add all of the styles to make it pretty! First, we need to create another file, our CSS file. Like you did at the beginning, create a new file in your 'personal_site' folder, and call the file 'index.css'.</p> 
+    <p>Open the CSS file and copy and paste the following code: </p>
     <pre><code>
     html {
     box-sizing: border-box;
@@ -341,7 +355,9 @@
 	    padding-bottom: 30px;
 	}
 </pre></code>
-<p>Refresh the page and notice what happens! Notice that we are targeting things in our HTML. The h1, for example, is our header. Play around with changing things, like the font sizes. Refresh the browser and notice how things change! Ask your instructor if any questions arise. Before we move onto styling the header section, pick out a picture that will be your background image. Save the image as 'hero.jpeg' in your images folder. Once you have done that, copy and paste the following code beneath, directly after the existing CSS.</p> 
+<p>Refresh the page and notice what happens! Notice that we are targeting things in our HTML structure. For example, the h1 is targeting our header. Play around with changing things, like the font sizes. Refresh the browser and notice how things change! Ask your instructor if any questions arise.</p>
+<p>Before we move onto styling the header section, pick out a picture that will be your background image. Make sure it's a big image! Save the image as 'hero.jpeg' in your images folder.</p>
+<p>Once you have done that, copy and paste the following code beneath, directly after the existing CSS.</p> 
 <pre><code>
 header {
     margin-top: 70px;
@@ -402,7 +418,8 @@ header h2 {
     padding-top: 4  0px;
 }
 </pre></code>
-<p>Make sure to change the name of your image in the '#image-container' to be the name of the image that you just saved (make sure you spell the file name correctly!). Save your file and refresh the browser. Look at your header with the background image! Next, copy the following code on the next line.</p>
+<p>Change the name of your image in the '#image-container' to be the name of the image file that you just saved (make sure you spell the file name correctly! You probably named it hero.jpeg). Save your file and refresh the browser. Look at your header with the background image! If it's not showing up, talk to your instructor</p>
+<p>Next, copy the following code on the next line in your css file.</p>
 <pre><code>
 nav {
     position: fixed;
@@ -440,8 +457,8 @@ nav a:hover {
 </pre></code>
 <p> Notice how when you hover over the navigation links at the top. Now it should be changing color! That is done with the 'nav a:hover', the very last thing that you pasted.</p>
 
-<h2>Finishing up the Styling</h2>
-<p>Copy and paste the remaining CSS below. Feel free to mess around in the code, and make changes to personalize your site. If something doesn't look right or you want help personalizing, just ask your instructor. Also, you should be able to click on each navigation link and have it bring you to the correct section on your site!</p>
+<h2>Finish your desktop style</h2>
+<p>Copy and paste the remaining CSS at the bottom of your css file, to finish up your desktop css. Feel free to mess around in the code, and make changes to personalize your site. If something doesn't look right or you want help personalizing, just ask your instructor. Also, you should be able to click on each navigation link and have it bring you to the correct section on your site!</p>
 <pre><code>
 .resumen {
     overflow: hidden;
@@ -533,7 +550,8 @@ footer img {
 </pre></code>
 
 <h2>Making your Site Responsive</h2>
-<p>Now, it's time to make your website responsive. That means it should look good when on a mobile phone or another smaller device that is not a computer. This is done using media queries. Copy and paste the code below in your CSS file, so that when someone looks at it on a mobile phone, it looks great!</p>
+<p>Now we are going to make it so that people can view your website on a mobile phone or tablet. This is done using media queries - you'll see text that says something like '@media only screen and (max-width: 1400px)'. 
+<p>Copy and paste this code at the bottom of your CSS file, so that when someone looks at it on a mobile phone, it looks great!</p>
 <pre><code>
 /* MOBILE - responsive design
 -----------------------------------------*/

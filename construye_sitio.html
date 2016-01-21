@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Kubmo:Sitio Personal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+</head>
+<body>
+<div class="back"> 
+    <p><a class="white_link" href="index.html"> < Kubmo docs</a></p>
+</div>
+<section class="page-header">
+    <h1 class="project-name">Construye un Sitio Personal</h1>
+    <h2 class="project-tagline"></h2>
+</section>
+<section class="main-content">
+    <h2>Generalidades</h2>
+    <p>Durante este taller, usted va a construir su propia página web usando HTML y CSS. HTML es como el contorno, elementos, y estructura. CSS es el estilo, organización y colores. Vamos a caminar a través de cada paso del camino, pregunte si usted tiene preguntas en cualquier momento. Consulte el sitio de ejemplo que va a crear: <a href="http://durhamka.github.io./"> durhamka.github.io</a></p>
+    <h2>Introducción</h2>
+    <p>Al escribir código, recuerde que usted tiene que ser muy preciso. Los errores ortográficos o espacios adicionales pueden estropear tu trabajo, así que presta atención a los pequeños detalles! Copiar y pegar siempre que pueda.</p>
+        <ol>
+            <li><p>Divida en grupos, y abre tu editor de texto. Usted tendrá diferentes editores de texto en función de lo que el ordenador que está utilizando. Su instructor le ayudará a encontrar su editor y abra. Un editor de texto es donde se le escribiendo todo el código que se va a escribir hoy! Así que cuando se le pide que copie y pegue durante este taller, que va a guardar todo ese código en tu editor de texto.</p></li>
+            <li><p>A continuación, vamos a abrir el navegador que va a utilizar en la actualidad. Dependiendo de qué computadora que está utilizando va a determinar qué aplicación que va a utilizar. Será bien sea Chrome, Firefox, Safari o Internet Explorer. Un navegador es donde se va a ver su trabajo como de realizar cambios en tu editor de texto.</p></li>
+        </ol>
+    <h2>Crear sus archivos</h2>
+    <p>Vamos a crear un directorio que contendrá tanto el código HTML y el archivo CSS.</p> 
+    <ol>
+        <li><p>Si está usando un Mac, abra una aplicación llamada 'Buscador' o 'Finder'. Siga estas instrucciones: Haga clic en "Escritorio" en la lista de la izquierda. En la esquina superior izquierda, haga clic en "Archivo", luego "Nueva carpeta". Crear una nueva carpeta y el nombre de 'personal_site'. Pulse Aceptar para guardar la nueva carpeta. </p></li>
+        <li><p>Si está utilizando un PC, cree una nueva carpeta y el nombre de 'personal_site'. Pregunte a un instructor si usted tiene alguna dificultad para hacer esto.</p></li>
+        <li><p>En su editor de texto, haga clic en "Archivo" en la esquina superior izquierda y seleccione 'New File'. Para nombrar el archivo, haga clic en "Archivo", luego haga clic en "Guardar". Guarde este archivo en la carpeta de 'personal_site'. Llame a este archivo 'index.html'. Clic en Guardar'. Esta será su archivo en el que todo el HTML de su sitio vivirán. Su editor de texto, dependiendo de lo que usted está usando, puede trabajar de manera diferente a este. Si es así, pida a un instructor para obtener ayuda.</p></li>
+        <li><p>Ahora, cree una carpeta de imágenes en el interior de la carpeta 'personal_site. Aquí es donde se almacenarán todas las imágenes de su sitio web. Muestre su instructor de la estructura de carpetas para asegurarse de que es correcta. A continuación, pasar a la siguiente sección!</p></li>
+    </ol>
+    <h2>Configuración de su página HTML</h2>
+    <p>Vamos a empezar por construir el esqueleto de nuestra página web con HTML. Esto significa que no habrá ningún estilo, pero sólo la estructura y los elementos. HTML significa Hyper Text Markup Language. Observe la estructura de lo que está pegando. En la parte superior de la página, le estamos diciendo a la computadora qué tipo de documento que estamos creando; un documento HTML. Nótese que estamos creando tanto "cabeza" y los elementos "cuerpo" para decirle al navegador que tenemos un encabezado y un cuerpo. Vamos a seguir para aprender más acerca de los elementos durante el ejercicio. Elementos dicen al navegador lo que queremos, si se trata de un texto más pequeño, el texto más grande o una parte específica de la página siguiente:</p>
+    <p>En el archivo index.html que ya ha creado en el editor de texto, copie y pegue el </p>
+
+   <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+	    &lt;head&gt;
+	        &lt;meta charset="UTF-8"&gt;
+	        &lt;title&gt;Añadir tú titulo agui&lt;/title&gt;
+	        &lt;link href='https://fonts.googleapis.com/css?family=Muli:400,300italic,300' rel='stylesheet' type='text/css'&gt;
+	        &lt;link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'&gt;
+	        &lt;link rel="stylesheet" href="index.css"&gt;
+            &lt;link rel="shortcut icon" href="images/logo@2x.png"&gt;
+	        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	    &lt;/head&gt;
+	    &lt;body&gt;
+        LLENAR CONTENIDO AQUI
+	    &lt;/body&gt;
+    &lt;/html&gt;
+  	</pre></code>
+    <p>Recuerde, no lo hagas eliminar cualquiera de este código, es lo que hace que su página web aparezca correctamente en el navegador, la conexión de la guía de estilo, y la vinculación a las fuentes.</p>
+    <ol>
+      	<li><p>Escriba en su propio nombre donde dice "Añadir su título de la página aquí. Además, asegúrese de guardar el archivo después de editarlo pulsando 'comando + s'. No guarda automáticamente.</p></li>
+      	<li><p>Edite la etiqueta la página "título" para que coincida con lo que usted quiere llamar a su sitio web.</p></li>
+      	<li><p>Ahora vamos a ver lo que acabas de hacer. Abra el navegador (Chrome, Safari o Firefox). Haga clic en "archivo" en la esquina superior izquierda. Haga clic en "Abrir archivo" y seleccione el archivo index.html de la carpeta 'personal_site' en el escritorio. Usted debe ver una página en blanco. Si usted no ve una página en blanco, podría ser simplemente porque está utilizando un editor de texto diferente. Mantenga esta página abierta, vamos a utilizar esto a lo largo del taller para ver su sitio web como realiza cambios.</p></li>
+    </ol>
+  	<h2>Navegación</h2>
+  	<p>Ahora vamos a empezar a añadir HTML para nuestra navegación  Esto irá en la parte superior de la página web. Navegación permite a los espectadores de su sitio para moverse fácilmente de una sección a otra. Vamos a construir la funcionalidad para que más adelante, pero sólo quiero añadir la estructura básica.</p>
+    <p>Copie y pegue el siguiente código en texto Sublime. Usted pega este código en entre el '&lt;div id="body"&gt;' and closing '&lt;div&gt;' etiqueta. Usted debe reemplazar el texto que dice "LLENAR CONTENIDO AQUÍ" Deje siempre la apertura y etiquetas de cierre en la parte superior e inferior de su código. (div contenedor, cuerpo de la etiqueta y la etiqueta html).</p>
+  	<pre><code>
+  	&lt;div id="container"&gt;
+	  	&lt;nav&gt;
+	        &lt;a href="#resumen">Resumen&lt;/a&gt;
+	        &lt;a href="#fotos">Fotos&lt;/a&gt;
+	        &lt;a href="#contacto">Contacto&lt;/a&gt;    
+	    &lt;/nav&gt;
+	&lt;/div&gt;
+    </pre></code>
+    <p>La palabra clave 'href' y 'a' elemento crea un 'link' que alguien puede hacer clic en. Vamos a hacer que estos enlaces funcionen más tarde. Tómese un momento para jugar con esto. Cambie las palabras como 'Resumen' a otra cosa. Guarde el archivo en su editor de texto, y refrescar el navegador Chrome. Observe cómo cambia a lo que usted ha escrito. Pregunte a su instructor si tiene alguna pregunta.</p>
+    <p>Su código HTML, hasta el momento, debería tener este:</p>
+    <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head>
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Tú nombre&lt;/title&gt;
+            &lt;link href='https://fonts.googleapis.com/css?family=Muli:400,300italic,300' rel='stylesheet' type='text/css'&gt;
+            &lt;link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'&gt;
+            &lt;link rel="stylesheet" href="index.css"&gt;
+            &lt;link rel="shortcut icon" href="images/logo@2x.png"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div id="container"&gt;
+                &lt;nav&gt;
+                    &lt;a href="#resumen">Resumen&lt;/a&gt;
+                    &lt;a href="#fotos">Fotos&lt;/a&gt;
+                    &lt;a href="#contacto">Contacto&lt;/a&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre></code>        
+
+    <h2>Sección Cabecera</h2>
+    <p>Este será el punto focal principal de su sitio. Vamos a añadir una imagen y estilos más adelante, pero por ahora, sólo estamos construyendo el esquema. Copia y pega el siguiente código justo debajo de la etiqueta de navegación de cierre (&lt;/nav&gt;).  Si esto es confuso, su instructor puede mostrar.</p>
+    <pre><code>
+    &lt;header&gt;
+        &lt;div id="image-container"&gt;&lt;/div&gt;
+        &lt;h1&gt;Tú nombre&lt;/h1&gt;
+         &lt;div class="divider"&gt;&lt;/div&gt;
+        &lt;h2&gt;Escribe algo sobre tú.&lt;/h2&gt;
+    &lt;/header&gt;
+    </pre></code>
+    <p>Asegúrese de cambiar el texto para mostrar su nombre y su subtitulo!</p>
+  	
+  	<h2>Sección de Resumen</h2>
+  	<p>Ahora, vamos a añadir nuestra primera sección, la sección de resumen. Copia y pega el siguiente código en el archivo html.</p>
+  	<pre><code>
+  	&lt;section id="resumen" class="resumen"&gt;
+        &lt;h1&gt;Mi Experiencia&lt;/h1&gt;
+        &lt;h3&gt;Trabajo&lt;/h3&gt;
+        &lt;p&gt;Descripcion de trabajo&lt;/p&gt;
+        &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+        &lt;div id="line-break"&gt; &lt;/div&gt;
+        &lt;h3&gt;Trabajo&lt;/h3&gt;
+        &lt;p&gt;Descripcion de trabajo&lt;/p&gt;
+        &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+        &lt;div id="line-break"&gt; &lt;/div&gt;
+        &lt;h3&gt;Otra trabajo&lt;/h3&gt;
+        &lt;p&gt;Descripcion de trabajo&lt;/p&gt;
+        &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+        &lt;div id="line-break"&gt; &lt;/div&gt;
+        &lt;h3&gt; Actividades, voluntario, otras cosas &lt;/h3&gt;
+        &lt;p&gt;Description.&lt;/p&gt;
+        &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+    &lt;/section&gt;
+    </pre></code>
+    <p>Observe cómo esta sección tiene un "id". El "id" nos permitirá enlazar a esta parte de la página de la sección de navegación, al hacer clic en el enlace. Siéntase libre de agregar y cambiar cualquier información que desee. Para desafiarse a sí mismo, trate de añadir otra secton bajo mi experiencia que habla de sus metas futuras. Recuerde a actualizar el navegador para ver crecer el sitio.</p>
+    <p>Su código hasta este punto, debería tener este:</p>
+    <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Tú nombre&lt;/title&gt;
+            &lt;link href='https://fonts.googleapis.com/css?family=Muli:400,300italic,300' rel='stylesheet' type='text/css'&gt;
+            &lt;link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'&gt;
+            &lt;link rel="stylesheet" href="index.css"&gt;
+            &lt;link rel="shortcut icon" href="images/logo@2x.png"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div id="container"&gt;
+                &lt;nav&gt;
+                    &lt;a href="#resumen">Resumen&lt;/a&gt;
+                    &lt;a href="#fotos">Fotos&lt;/a&gt;
+                    &lt;a href="#contacto">Contacto&lt;/a&gt;
+                &lt;/nav&gt;
+
+                &lt;header&gt;
+                    &lt;div id="image-container"&gt;&lt;/div&gt;
+                    &lt;h1&gt;Tú nombre&gt;&lt;/h1&gt;
+                    &lt;div class="divider"&gt;&lt;/div&gt;
+                    &lt;h2&gt;Personal Description&lt;/h2>
+                &lt;/header&gt;
+                &lt;section id="resumen" class="resumen"&gt;
+                    &lt;h1&gt;Mi Experiencia&lt;/h1&gt;
+                    &lt;h3&gt;Trabajo&lt;/h3&gt;
+                    &lt;p&gt;Descripcion de trabajo&lt;/p&gt;
+                    &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+                    &lt;div id="line-break"&gt; &lt;/div&gt;
+                    &lt;h3&gt;Trabajo&lt;/h3&gt;
+                    &lt;p&gt;Descripcion de trabajo&lt;/p&gt;
+                    &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+                    &lt;div id="line-break"&gt; &lt;/div&gt;
+                    &lt;h3&gt;Otra trabajo&lt;/h3&gt;
+                    &lt;p&gt;Descripcion de trabajo&lt;/p&gt;
+                    &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+                    &lt;div id="line-break"&gt; &lt;/div&gt;
+                    &lt;h3&gt; Actividades, voluntario, otras cosas &lt;/h3&gt;
+                    &lt;p&gt;Description.&lt;/p&gt;
+                    &lt;p class="detail"&gt;Time Period&lt;/p&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;            
+    </pre></code>
+
+    <h2>Fotos Sección</h2>
+    <p>Ahora vamos a pasar a sus fotos. Pero antes de escribir más código, elege ocho fotos que ha tomado o que usted representa que usted le gustaría tener en su sitio. </p>
+    <p>Guarde cada una de las imágenes en la carpeta 'images' que ha creado anteriormente. Si usted no tiene imágenes fácilmente disponible, usted puede mantener a los que ya tenemos. Cambia el nombre de cada foto a algo que representa su imagen. Asegúrese de que los nombres de archivo no tienen ningún espacio. Por ejemplo, usted podría nombrar un archivo 'my_dog_is_cool.jpg'.</p>
+    <p>Copie y pegue el siguiente código en el archivo html bajo la etiqueta de cierre de la sección Resumen - &lt;/section&gt;.</p>
+    <p>Pegue el nombre de cada una de sus imágenes en el archivo html donde dice 'your_image_name' a continuación.</p>
+    <pre><code>
+      &lt;section id="fotos" class="fotos"&gt;
+        &lt;h1&gt;Mis Fotos&lt;/h1&gt;
+        &lt;div class="foto_container"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+	    &lt;/div&gt;    
+    &lt;/section&gt;
+    </pre></code>
+    <p>Observe la etiqueta 'img'. Eso le dice al navegador que se le añade una imagen aquí. El nombre 'alt' es lo que aparece si la imagen pasa de no cargar. Actualice su navegador y observe todas sus imágenes aparecen!</p>
+
+    <h2>Contacto Sección</h2>
+    <p>Estamos en nuestra sección final! Hay cuatro imágenes en el escritorio de su ordenador que se utilizará para las imágenes de contacto. Si no los tiene, estamos pasando alrededor de una unidad de disco USB y su instructor podemos ayudarle a obtener de ellos fuera de la unidad de disco USB y en su escritorio. Tome las cuatro imágenes y colocarlas en la carpeta 'images'. </p>
+    <p>Copie y pegue el siguiente código debajo de las imágenes &lt;/section&gt;.</p>
+    <pre><code>
+    &lt;footer id="contacto"&gt;
+        &lt;h1&gt;Contacto&lt;/h1&gt;
+
+        &lt;a href="https://twitter.com/your_twitter_handle"&gt;&lt;img src="images/twitter.png"&gt;&lt;/a&gt;
+        &lt;a href="https://facebook.com/your_facebook_name"&gt;&lt;img src="images/facebook.png"&gt;&lt;/a&gt;
+        &lt;a href="https://linkedin.com/in/your_linkedin_name"&gt;&lt;img src="images/linkedin.png"&gt;&lt;/a&gt;
+        &lt;a href="mailto:your_email_address"&gt;&lt;img src="images/mail.png"&gt;&lt;/a&gt;
+    &lt;/footer&gt;
+    &lt;div id="kubmo_info"&gt;
+    	&lt;a href="http://kubmo.github.io/" target="_blank" &lt;p&gt;Like this site? Build your own with the Kubmo Guides!&lt;/p&gt; &lt;/a&gt;
+    &lt;/div&gt;
+    </pre></code>
+    <p>Observe la etiqueta 'href' de nuevo. Esto significa que estas imágenes enlazan a sus perfiles sociales reales en línea. Puesto en los vínculos reales a sus sitios de medios sociales, por lo que la gente puede ponerse en contacto con usted! Actualice la ventana del navegador y asegúrese de que al hacer clic sobre las imágenes, se vinculan a sus perfiles sociales correctamente en una nueva página. Si no, pregunte a su instructor.</p>
+    <p>Su código HTML debería tener este aspecto, en este momento!</p>
+    <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Tú nombre&lt;/title&gt;
+            &lt;link href='https://fonts.googleapis.com/css?family=Muli:400,300italic,300' rel='stylesheet' type='text/css'&gt;
+            &lt;link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'&gt;
+            &lt;link rel="stylesheet" href="index.css"&gt;
+            &lt;link rel="shortcut icon" href="images/logo@2x.png"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div id="container"&gt;
+                &lt;nav&gt;
+                    &lt;a href="#resumen">Resumen&lt;/a&gt;
+                    &lt;a href="#fotos">Fotos&lt;/a&gt;
+                    &lt;a href="#contacto">Contacto&lt;/a&gt;
+                &lt;/nav&gt;
+
+                &lt;header&gt;
+                    &lt;div id="image-container"&gt;&lt;/div&gt;
+                    &lt;h1&gt;Tú nombre&gt;&lt;/h1&gt;
+                    &lt;div class="divider"&gt;&lt;/div&gt;
+                    &lt;h2&gt;Personal Description&lt;/h2>
+                &lt;/header&gt;
+                &lt;section id="resumen" class="resumen"&gt;
+                    &lt;h1&gt;Mi Experiencia&lt;/h1&gt;
+                    &lt;h3&gt;Trabajo&lt;/h3&gt;
+                    &lt;p&gt;Descripcion de trabajo&lt;/p&gt;
+                    &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+                    &lt;div id="line-break"&gt; &lt;/div&gt;
+                    &lt;h3&gt;Trabajo&lt;/h3&gt;
+                    &lt;p&gt;Descripcion de trabajo&lt;/p&gt;
+                    &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+                    &lt;div id="line-break"&gt; &lt;/div&gt;
+                    &lt;h3&gt;Otra trabajo&lt;/h3&gt;
+                    &lt;p&gt;Descripcion de trabajo&lt;/p&gt;
+                    &lt;p class="detail"&gt;Datos de trabajar&lt;/p&gt;
+                    &lt;div id="line-break"&gt; &lt;/div&gt;
+                    &lt;h3&gt; Actividades, voluntario, otras cosas &lt;/h3&gt;
+                    &lt;p&gt;Description.&lt;/p&gt;
+                    &lt;p class="detail"&gt;Time Period&lt;/p&gt;
+                &lt;/section&gt;
+                &lt;section id="fotos" class="fotos"&gt;
+                    &lt;h1&gt;Mis Fotos&lt;/h1&gt;
+                    &lt;div class="foto_container"&gt;
+                        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+                        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+                        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+                        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+                        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+                        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+                        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+                        &lt;img src="images/your_image_name.jpg" alt="image_name"&gt;
+                     &lt;/div&gt;    
+                &lt;/section&gt;
+                &lt;footer id="contacto"&gt;
+                    &lt;h1&gt;Contacto&lt;/h1&gt;
+                    &lt;a href="https://twitter.com/your_twitter_handle"&gt;&lt;img src="images/twitter.png"&gt;&lt;/a&gt;
+                    &lt;a href="https://facebook.com/your_facebook_name"&gt;&lt;img src="images/facebook.png"&gt;&lt;/a&gt;
+                    &lt;a href="https://linkedin.com/in/your_linkedin_name"&gt;&lt;img src="images/linkedin.png"&gt;&lt;/a&gt;
+                    &lt;a href="mailto:your_email_address"&gt;&lt;img src="images/mail.png"&gt;&lt;/a&gt;
+                &lt;/footer&gt;
+                &lt;div id="kubmo_info"&gt;
+                    &lt;a href="http://kubmo.github.io/" target="_blank" &lt;p&gt;Like this site? Build your own with the Kubmo Guides!&lt;/p&gt; &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;            
+    </pre></code>
+
+    <h2>Estila la página!</h2>
+    <p>¡Felicidades! Usted tiene el esquema básico para su sitio web. ¿Pero, no se vea un poco desorganizado en el navegador? Ahora, vamos a agregar todos los estilos para que sea bonita. Tenemos que crear otro archivo, nuestro archivo CSS. Así como lo hizo al principio, crea un nuevo archivo en la carpeta de 'personal_site', y llamar al archivo 'index.css' en su código. </p>
+    <pre><code>
+    html {
+    box-sizing: border-box;
+	}
+	*, *:before, *:after {
+	    box-sizing: inherit;
+	}
+
+	body {
+	    font-family: 'Muli', sans-serif;
+	    font-weight: lighter;
+	    padding: 0;
+	    margin: 0;
+	    background-color: #F5F5F5;
+	}
+
+	h1 {
+	    font-size: 30px;
+	    margin: 0;
+	    font-weight: normal;
+	    text-align: center;
+	    padding-bottom: 60px;
+	    color: #400160;
+
+	}
+
+	h2 {
+	    font-size: 25px;
+	    font-weight: lighter;
+	    text-align: center;
+	}
+
+	header h1 {
+	    font-size: 75px;
+	    font-family: 'Alex Brush', cursive;
+	    border-bottom: none;
+	    color: #ee1289;
+	}
+
+	header,
+	section,
+	footer {
+	    padding: 60px 120px
+	}
+
+	.loves,
+	footer {
+	    text-align: center;
+	}
+
+	p {
+	    font-size: 18px;
+	    line-height: 1.5;
+	    color: #848484;
+	    padding-bottom: 30px;
+	}
+</pre></code>
+<p>Actualice la página y observe lo que sucede. Nótese que estamos apuntando cosas en nuestra estructura HTML. Por ejemplo, el 'h1' está apuntando a nuestra cabecera. Juega un poco con el cambio de las cosas, al igual que los tamaños de fuente. Actualice el navegador y observe cómo cambian las cosas! Pregunte a su instructor si surge alguna pregunta.</p>
+<p>Antes de pasar a labrar la sección de encabezado, elegir una imagen que será la imagen de fondo. Asegúrese de que sea una imagen grande! Guarde la imagen como 'hero.jpg' en la carpeta de imágenes.</p>
+<p>Una vez que haya hecho eso, copia y pega el siguiente código debajo, directamente después de la CSS existente.</p> 
+<pre><code>
+header {
+    margin-top: 70px;
+    position: relative;
+    display: block;
+    min-height: 500px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#image-container {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    bottom: -10px;
+    right: 0px;
+    background: url(images/your_image_name_here.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(6px) saturate(180%);
+    -moz-filter: blur(6px) saturate(180%);
+    -o-filter: blur(6px) saturate(180%);
+    -ms-filter: blur(6px) saturate(180%);
+    filter: blur(6px) saturate(180%);
+}
+
+header h1 {
+    position: absolute;
+    top: 140px;
+    font-size: 118px;
+    color: #ffffff;
+    left: 20px;
+    right: 20px;    
+}
+
+.divider {
+	width: 100px;
+	height: 4px;
+	top: 220px;
+	background: #FFFFFF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	left: 46%;
+}
+
+header h2 {
+    position: absolute;
+    top: 290px;
+    font-size: 30px;
+    color: #ffffff;
+    left: 20px;
+    right: 20px;
+    padding-top: 4  0px;
+}
+</pre></code>
+<p>Cambie el nombre de su imagen en el "image-container" para será el nombre del archivo de imagen que acaba de guardar (asegúrate de que escribe el nombre del archivo correctamente! Probablemente lo nombró hero.jpg). Guarde el archivo y actualizar el navegador. Mire a su cabecera la imagen de fondo! Si no está apareciendo, hable con su instructor.</p>
+<p>A continuación, copie el siguiente código en la siguiente línea en su archivo css.</p>
+<pre><code>
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+    border-top: thick solid #AA00FF;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 0px 1px 0px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    display: inline-block; /* changes links from default inline element to add padding properly */
+    text-decoration: none; /* removes underline */
+    margin: -5px 20px 20px 20px; /* adds space around each link */
+    color: #808080;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: lighter;
+    padding: 25px;
+}
+
+nav a:hover {
+    background-color:#AA00FF;
+    color: #FFFFFF;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+</pre></code>
+<p>Note como cuando se pasa sobre el menú de navegación en la parte superior. Ahora debería estar cambiando de color! Esto se hace con el. 'Nav a: hover', la última cosa que pegó.</p>
+
+<h2>Termina tu estilo de escritorio</h2>
+<p>Copia y pegar el CSS restante en la parte inferior de su archivo css, para terminar su css escritorio. Puedes jugar mas con el código, y hacer cambios para personalizar su sitio. Si algo no se ve bien o si desea la ayuda que personaliza, solo pregunte a su instructor. También, usted debería ser capaz de hacer clic en cada vínculo de navegación y hacer que le llevará a la sección correcta en su sitio!</p>
+<pre><code>
+.resumen {
+    overflow: hidden;
+}
+
+.resumen h1 {
+	font-weight: 600;
+	border-bottom: 1.5px solid #ccc;
+}
+
+.resumen h3 {
+    padding-top: 30px;
+    color: #400160;
+    font-weight: 600;
+}
+
+.resumen p {
+    color: #848484;
+    font-weight: 100;
+}
+
+.detail {
+	margin-top: -30px;
+	font-style: italic;
+	opacity: .5;
+}
+
+#line-break {
+    width: 100px;
+    height: 1px;	
+    background: #ccc;
+}
+
+.fotos {
+    margin-top: -100px;
+}
+
+.fotos h1 {
+	border-top: 1.5px solid #ccc;
+	padding-top: 60px;	
+}
+
+.fotos img {
+    width: 286px;
+}
+
+footer {
+    margin-top: -100px;
+}
+
+footer h1 {
+	margin-top: 30px;
+	border-bottom: 1.5px solid #ccc;
+}
+
+footer img {
+    width: 50px;
+    margin: 60px 30px 0px 30px;
+}
+
+/* BOTTOM BAR - kubmo info
+-----------------------------------------*/
+
+#kubmo_info a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#kubmo_info p {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#kubmo_info {
+    background-color: #AA00FF;
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    height: 82px;
+}
+
+#kubmo_info a:hover {
+    color: #400160;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+</pre></code>
+
+<h2>Hacer su sitio Responsive</h2>
+<p>Ahora vamos a hacerlo de modo que la gente pueda ver su sitio web en un teléfono móvil o tablet. Esto se hace usando 'media queries' - verá el texto que dice algo como '@media only screen and (max-width: 1400px'.
+<p>Copia y pegar este código en la parte inferior de su archivo CSS, para que cuando alguien  en un teléfono móvil, se ve muy bien!</p>
+<pre><code>
+/* MOBILE - responsive design
+-----------------------------------------*/
+
+@media only screen and (max-width: 1400px) {
+
+    .fotos img {
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .fotos img {
+        width: 320px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    header,
+    section,
+    footer {
+        padding: 60px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    header h2 {
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 100px;
+        margin-top: 0px;
+    }
+
+    .divider {
+        top:200px;
+        left: 43%;
+    }
+
+    nav a {
+        margin: -5px 5px 5px 5px ; /* adds space around each link */
+        font-size: 18px;
+        padding: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header h1 {
+        font-size: 100px;
+        margin-top: -60px;
+    }
+
+    header h2 {
+        margin-top: 80px;
+    }
+
+    .divider {
+        top:280px;
+        left: 43%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header,
+    section,
+    footer {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    header h2 {
+        margin-top: 80px;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin-top: -30px;
+    }
+
+    header {
+        margin-top: 40px;
+    }
+
+    .divider {
+        top:260px;
+        left: 36%;
+    }
+}
+</pre></code>
+
+<p>Woo hoo! Su sitio debe mirar cómo usted quisiera que! Usted acaba de construir su primer sitio web. ¡Qué gran logro!</p>
+
+<h2>Presenta su sitio</h2>
+<p>Vamos a alojar su sitio en algo que se llama Github. Si tenemos bastante bueno de internet, lo haremos juntos. Si no, lo haremos para usted cuando tenemos una mejor conexión y te enviaremos un correo electrónico con la URL de su sitio. Entonces usted será capaz de ver desde cualquier ventana del navegador, y puedes compartirlo con cualquier persona.</p>
+
+<h2>Crear una cuenta de Github</h2>
+<p>Con el fin de alojar su sitio en Github, es necesario crear una cuenta. Es gratis. En el navegador, vaya a 'www.github.com'. En la esquina superior derecha, haga clic en "Registrarse". Escriba un nombre de usuario, dirección de correo electrónico y la contraseña y haga clic en "Crear una cuenta". Si necesita ayuda de traducción, pregunte a su instructor.</p>
+
+<h2>Creación de una página de Github</h2>
+<p>Inicie sesión en la página principal. En la esquina superior derecha hay un signo '+'. Haga clic en eso y seleccione la primera opción 'Nuevo repositorio. En el nombre del repositorio "tipo caja" 'your_username'.github.io ". Asegúrese de que usted escriba su nombre de usuario que acaba de crear su cuenta con. Y a continuación, haga clic en el botón verde, 'Crear repositorio'.</p>
+
+<h2>El uso de un Github GUI</h2>
+<p>Abra la aplicación Github en su ordenador. Si el equipo no lo tiene, tenemos un USB que lo tiene en él lo que aún puede descargarlo. Vamos a utilizar esta aplicación para empujar su trabajo a la página de Github. Entonces, nadie será capaz de ver su sitio personal. El uso de la aplicación Github es complicado, así que vamos a saber a su instructor cuando se llega a este punto. Ella puede ayudarle a clonar el repositorio que creó en el paso anterior. Usted puede ver el proyecto que desea clonar pulsando el botón "+" en la esquina superior izquierda. Usted, a continuación, agregue todos los archivos y pulsa el botón 'comprometerse' que empujará todo el código a su página.</p>
+
+<h2>El Producto Terminado</h2>
+<p>En su navegador, vaya a http://your_username.github.io. Usted debe ver su sitio terminado. Usted puede visitar este URL en cualquier momento desde cualquier ordenador, siempre y cuando tenga conexión a Internet. Comparte con tu familia, amigos y  en los redes sociales. Si el sitio no aparece, deje saber a su instructor y pueden ayudarle a depurar.</p>
+</section>
+</body>
+</html>

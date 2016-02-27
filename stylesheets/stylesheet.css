@@ -148,6 +148,11 @@ li {
 .main-content h2 {
   margin-top: 3rem;
 }
+.main-content h6 {
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+  color:#ACACAC;
+}
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {

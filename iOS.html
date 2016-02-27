@@ -131,7 +131,8 @@
         <img src="images/lots_of_screens.png">
         <p><a href="https://developer.apple.com/videos/play/wwdc2015-218/" target="_blank">Watch this video from WWDC to learn exactly what auto layout is.</a></p>
          <h3>Localization</h3>
-        <p>Localization happens when an app is translated to be used in any part of the world. If built correctly, your design should not break when all your content is replaced with different content.</p>
+        <p>Localization, or internationalization, happens when an app is translated to be used in any part of the world. If built correctly, your design should not break when all your content is replaced with different content.</p>
+        <p>Most apps are developed first in the native language of the product team. When growing the user base, it's important to provide the same quality experience for users in all supported languages.</p>
         <p>From the beginning, keep language and orientation optimization in mind when designing. The goal is to make the design flexible enough so that any content could fill in. For example, German or Portuguese text can be much longer than English.</p>
         <p>Design with “leading” content in mind, rather than starting from “left” or “right”. Some languages are read from right to left, rather than left to right.</p>
         <p><a href="https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/InternationalizingYourUserInterface/InternationalizingYourUserInterface.html" target="_blank">See the documentation on how to localize an interface.</a></p>
@@ -139,17 +140,18 @@
         <h3>Accessibility</h3>
         <p>People of all ages and abilities use iPhone apps. This means they can change their system settings to effect text in all their apps.</p>
         <p>Your type and content should be able to adjust to this while still remaining a usable experience.</p>
+        <p>Also remember that for color blind users, you'll want to differentiate content with more than just color - with solutions like font hierarchy.</p>
         <img src="images/text_accesibility.png">
     <h2>Stack views</h2>
         <p>When building a new layout, iOS creates a structure to work within. Each added element adds a level of complexity. The Stack View tool allows developers to build the content to arrange correctly, no matter the screen size. Because of this, the developer does not have to code special cases for every size or setting. </p>
         <img src="images/stack_views.png">
-        <p>Stack views were created to make it easier for developers to lay out content in columns or rows.</p>
+        <p>Stack views were created to make it easier for developers to lay out content in columns or rows, and easily adapt to all screen sizes and orientations.</p>
         <p><a href="http://www.appcoda.com/stack-views-intro/" target="_blank">See an intro on how Stack Views work.</a></p>
             <ul>
-                <li><p>The xcode storyboard builder can be used to define elements based on the axis, alignment, and distribution. </p></li>
+                <li><p>The Xcode <a href="https://developer.apple.com/xcode/interface-builder/">Interface Builder</a> can be used to define elements based on the axis, alignment, and distribution. </p></li>
                 <li><p>For more complex layouts, stack views are embedded in other stack views. Nesting stack views allows for more customization on exactly how it should look.</p></li>
                 <li><p>To adapt the layout for different screen sizes, constraints may need to be added based on auto layout screen sizes: regular and compact.</p></li>
-                <li><p>Stack views and auto layout should be used for most layout positioning. Specific constraints should only be added when absolutely needed. (adaptivity > pixel perfect).</p></li>
+                <li><p>Stack views and auto layout should be used for most layout positioning. Specific constraints should only be added when absolutely needed. (adaptivity is more important than pixel perfect in this environment).</p></li>
             </ul>
     <h2>Font</h2>
         <h3>iOS Dynamic Type</h3>
